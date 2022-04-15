@@ -7,9 +7,14 @@ SciCount is tool focused on counting and classifying of objects in image-like da
 
 The scope of work for this proposal is to ease up image analysis for infectious disease research and monitoring. The aim is to utilize modern machine learning methods to create tools used for both disease monitoring in word and under the microscope. The common theme is data preparation and selection, object and event detection, counting, and classification.
 
-The machine learning 
+The deep learning part of machine learning is making great progress and it is time to use the newest approaches and leverage them for research. It is necessary to be careful when using scientific data with "black boxes" so detailed use-case documentation with training set is necessary. 
 
 # Goals
+
+* Publish models with training datasets for encreased re-usability
+* Provide training materials
+* Test models with diffeent noise and artifacts for esabilishing of limitations
+* Provide strategies for data cleaning
 
 ## Models
 
@@ -23,6 +28,7 @@ In the microscopic world, we often analyze whole slides of blood smears. In non-
 Evaluation - such as counting, measuring, or categorization - of bacterial colonies on agar plates is one of the most common methods used in biomedical examinations, food and drug safety tests, as well as in public health. Counting is usually performed manually by technicians, which leads to error-prone and subjective results; it is also tedious, laborious, and time-intensive, therefore cost-ineffective. While there already exist some application-specific automated solutions, a workflow-driven approach with interchangeable components is needed. Modern machine learning object detection techniques approach a level of maturity on which deep learning models (DLM) are becoming suitable for evaluating scientific data. With proper training sets and data augmentation, DLMs should prove practical even without expensive imaging cameras.
 
 ## Training
+Importing part of high usability is good training materials with step by step tutorials and case-studies. From specific approaches as semi-supervised learning up to case studies for each published models - which will help with transfer learning use-cases or reusing of whole approach for completely or partialy new data.
 
 ## Available data
 
