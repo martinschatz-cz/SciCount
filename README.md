@@ -5,16 +5,17 @@ SciCount is tool focused on counting and classifying of objects in image-like da
 
 ## Motivation
 
-The scope of work for this proposal is to ease up image analysis for infectious disease research and monitoring. The aim is to utilize modern machine learning methods to create tools used for both disease monitoring in word and under the microscope. The common theme is data preparation and selection, object and event detection, counting, and classification.
+The scope of work for this project is to ease up image analysis for infectious disease research and monitoring. The aim is to utilize modern machine learning methods to create tools used for both disease monitoring in word and under the microscope. The common theme is data preparation and selection, object and event detection, counting, and classification. The project is planned for the communities and with thier direct involvment. 
 
 The deep learning part of machine learning is making great progress and it is time to use the newest approaches and leverage them for research. It is necessary to be careful when using scientific data with "black boxes" so detailed use-case documentation with training set is necessary. 
 
 # Goals
 
 * Publish models with training datasets for encreased re-usability
-* Provide training materials
+* Provide training materials for each community
 * Test models with diffeent noise and artifacts for esabilishing of limitations
 * Provide strategies for data cleaning
+* Plan training workshops and fedback sessions.
 
 ## Models
 
