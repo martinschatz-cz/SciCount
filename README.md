@@ -43,7 +43,7 @@ Data set is in JPEG (unspecified loss compresion), with unspecified form of labe
 
 ## Interoperability, Re-usability and Sensitive Data
 
-### Interoperability and Re-usability
+### Re-usability
 
 We aim for high interoperbility, for this thi first step is to use Python, the second is precise case-study documentation and research data management. Scientic images can be tough to work with and use together with complex tools. There already exist Ethics quide for image analysis, and we will fully respect it and strive to go even further.
 
@@ -65,6 +65,12 @@ And they might contain artifact:
 
 All this needs to be taken into account, reported and kept together with tools. Because workflow designed on calibrated 16-bit 3channel data might lead to nonsense results when used on 8-bit data.
 
+### Interoperability
+There already exists tools that can potentialy use our models in their frameworks or workflows. Here is a list:
+* [BioImage IO](https://bioimage.io/#/) is a dataset and model repository, that aims for high Interoperability between softwares. We aim to publish there final results.
+* [Make Sense](https://github.com/SkalskiP/make-sense) have possibility to upload model.
+* [MegaDetector GUI](https://github.com/petargyurov/megadetector-gui) has a future goal to train and use custom models.
+* [Zamba](https://github.com/drivendataorg/zamba) aims for animal classification, and has possibility to use other models.
 
 ### Sensitive Data
 
