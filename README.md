@@ -17,7 +17,7 @@ The deep learning part of machine learning is making great progress and it is ti
 
 ## Models
 
-The development si done as collaboration of three scientific communities fro University of Chemistry and Technology in Prague, Czech University of Life Science in Prague and Science Faculty of Charles University. Each community aims to have specific workflow for its needs based on YOLO network or any other usable classical image analyis or deep learning approach.
+The development si done as collaboration of three scientific communities fro University of Chemistry and Technology in Prague, Czech University of Life Science Prague and Science Faculty of Charles University. Each community aims to have specific workflow for its needs based on YOLO network or any other usable classical image analyis or deep learning approach.
 
 **Wildlife monitoring** (Czech University of Life Science Prague)
 In the macroscopic world, wild animals, especially non-native species, are considered potential vectors of diseases. Camera traps became common practice in wildlife monitoring in the past decades producing hundreds of hours of videos. The videos are usually manually inspected for the presence of a focal group of species. No dedicated open-source software tool exists to help detect the animals from videos, count them or even classify them, there is potential for both filtering out of the videos without events and creating timelines of events as a result of the analysis.
