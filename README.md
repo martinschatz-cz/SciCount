@@ -1,5 +1,5 @@
 # SciCount
-SciCount is tool focused on counting and classifying of objects in image-like data and scientific images, with training and example datasets. 
+SciCount is tool focused on counting and classifying of objects in image-like data and scientific images, with training and example datasets. In it core it is YOLO V5 made by [Ultralytics](https://github.com/ultralytics/yolov5) (authored by [Glenn Jocher](https://www.linkedin.com/in/glenn-jocher/)), without which it would be impossible to apply our approaches on scientific data.
 
 ## Motivation
 
@@ -77,3 +77,10 @@ There already exists tools that can potentialy use our models in their framework
 Scientific data are often sensitive, and it can easily happen that we are not allowed to share the data with anyone because of licencing, data rights or because they may contain privat information. In this case we often need to work with local resources. To balance out the ease of training and learning and use on local computing resources we use two anotation tools.
 
 [Roboflow](https://github.com/roboflow-ai/roboflow-python) and [Make Sense](https://github.com/SkalskiP/make-sense) both aim to be tools for anotating data, and both to some level provide the possibility of not sharing data.
+
+## About us
+
+[Martin Schätz](https://orcid.org/0000-0003-0931-4017), 
+[Lukáš Mrazík](https://orcid.org/0000-0002-8847-5697), 
+[Karolina Mahlerová](https://orcid.org/0000-0001-7970-485X), 
+[Michal Vinkler](https://orcid.org/0000-0003-3572-9494)
