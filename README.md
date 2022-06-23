@@ -31,6 +31,46 @@ Evaluation - such as counting, measuring, or categorization - of bacterial colon
 ## Training
 Importing part of high usability is good training materials with step by step tutorials and case-studies. From specific approaches as semi-supervised learning up to case studies for each published models - which will help with transfer learning use-cases or reusing of whole approach for completely or partialy new data.
 
+### Augmentation
+The most important part of creating robust model is augmentation - preparing your images of all the possibilities that can happen to our images during acquisition. In principle, for RGB images it is quite easy and well described (incredible review here: [https://github.com/AgaMiko/data-augmentation-review](https://github.com/AgaMiko/data-augmentation-review) by [AgaMiko](https://github.com/AgaMiko)). For scientific data and data for micrsocopes we will need bit more different setup for augmentation, and much more controll over them.
+
+#### Scientific Images
+Our images should have color calibration, and lens corrections, so even though they might be RGB, there is no possibility for channel shifts or RGB shifts. However we may consider any brightness, contrast, blur or movement transformations. All our images should be generated in way we can say what augmentation was used (naming convention) so we can check the results later.
+
+From Albumentation we may consider:
+* HorizontalFlip
+* RandomBrightnessContrast
+* MultiplicativeNoise
+* VerticalFlip
+* Blur
+* Transpose
+* RandomRotate90
+* ShiftScaleRotate
+* RandomBrightnessContrast
+
+We should also consider and implement:
+
+* Brightness values shift (due to over/under exposure)
+* Specifc gaussian blur (lower depth of field due to lower aperture)
+* Poisson noise
+* LowPass filter to simulate OTF
+
+#### Microscopic Images
+Augmentation for microscopic images are much more challenging due to different way of how images are created and saved and since we are bound by limits of optics. Each of our channel is representing data of its own, can be shifted (due to physical color shift) and can have shifted brightness (if not corrected). So far nice explanation can be found in [Pete Bankhead](https://github.com/petebankhead) *Analyzing fluorescence microscopy images with ImageJ* online book: chapter [Simulating image formation](https://petebankhead.gitbooks.io/imagej-intro/content/chapters/macro_simulating/macro_simulating.html)
+
+We should consider:
+* the size of the PSF (related to the objective lens NA and microscope type)
+* the amount of fluorescence being emitted from the brightest region
+* the amount of background (from stray light and other sources)
+* the exposure time (and therefore number of detected photons)
+* the detector’s offset
+* the detector’s gain
+* the detector’s read noise
+* camera binning
+* bit-depth
+
+So far I didnt find any other mentions or code to properly augment training data that cmae from microscopes, and I am happy to learn more if you know any sources.
+
 ## Available data
 
 ### Ours
