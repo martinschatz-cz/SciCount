@@ -34,6 +34,8 @@ Importing part of high usability is good training materials with step by step tu
 ### Augmentation
 The most important part of creating robust model is augmentation - preparing your images of all the possibilities that can happen to our images during acquisition. In principle, for RGB images it is quite easy and well described (incredible review here: [https://github.com/AgaMiko/data-augmentation-review](https://github.com/AgaMiko/data-augmentation-review) by [AgaMiko](https://github.com/AgaMiko)). For scientific data and data for micrsocopes we will need bit more different setup for augmentation, and much more controll over them.
 
+Our support package for augmentation of scientific images is available here: [SciAugment](https://github.com/martinschatz-cz/SciAugment)
+
 #### Scientific Images
 Our images should have color calibration, and lens corrections, so even though they might be RGB, there is no possibility for channel shifts or RGB shifts. However we may consider any brightness, contrast, blur or movement transformations. All our images should be generated in way we can say what augmentation was used (naming convention) so we can check the results later.
 
