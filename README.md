@@ -28,6 +28,11 @@ In the microscopic world, we often analyze whole slides of blood smears. In non-
 **Object counting of bacterial colonies** (University of Chemistry and Technology in Prague)
 Evaluation - such as counting, measuring, or categorization - of bacterial colonies on agar plates is one of the most common methods used in biomedical examinations, food and drug safety tests, as well as in public health. Counting is usually performed manually by technicians, which leads to error-prone and subjective results; it is also tedious, laborious, and time-intensive, therefore cost-ineffective. While there already exist some application-specific automated solutions, a workflow-driven approach with interchangeable components is needed. Modern machine learning object detection techniques approach a level of maturity on which deep learning models (DLM) are becoming suitable for evaluating scientific data. With proper training sets and data augmentation, DLMs should prove practical even without expensive imaging cameras.
 
+### Example notebooks
+You can find example notebooks aplying [SciAugment](https://github.com/martinschatz-cz/SciAugment) with small test datasets in folder example_notebooks. There is reproducible example for **LTEE**, **Wildlife detection** and **Smear counting**.
+
+More notebooks will be added in future.
+
 ## Training
 Importing part of high usability is good training materials with step by step tutorials and case-studies. From specific approaches as semi-supervised learning up to case studies for each published models - which will help with transfer learning use-cases or reusing of whole approach for completely or partialy new data.
 
@@ -125,4 +130,3 @@ Scientific data are often sensitive, and it can easily happen that we are not al
 [Martin Schätz](https://orcid.org/0000-0003-0931-4017), 
 [Lukáš Mrazík](https://orcid.org/0000-0002-8847-5697), 
 [Karolina Mahlerová](https://orcid.org/0000-0001-7970-485X), 
-[Michal Vinkler](https://orcid.org/0000-0003-3572-9494)
