@@ -132,3 +132,37 @@ Scientific data are often sensitive, and it can easily happen that we are not al
 [Martin Schätz](https://orcid.org/0000-0003-0931-4017), 
 [Lukáš Mrazík](https://orcid.org/0000-0002-8847-5697), 
 [Karolina Mahlerová](https://orcid.org/0000-0001-7970-485X), 
+
+# How to cite
+
+## SciCount
+
+```
+@MISC{Schatz2022-SciCount,
+  title     = "{martinschatz-cz/SciCount}: v1.0.0 with reusable example
+               notebooks",
+  author    = "Sch{\"a}tz, Martin and Mraz{\'\i}k, Luk{\'a}{\v s} and
+               M{\'a}hlerova, Karolina",
+  abstract  = "The first version contains an example of augmentation of
+               scientific data and object detection with YOLO\_v5 on colony
+               counting (2 classes), object counting in blood smears (can be
+               used as semisupervised learning for faster annotation), and
+               wildlife detection from night records with a camera trap.",
+  publisher = "Zenodo",
+  year      =  2022
+}
+```
+
+## SciAugment
+```
+@MISC{Schatz2022-SciAugment,
+  title     = "{martinschatz-cz/SciAugment}: v0.1.0",
+  author    = "Sch{\"a}tz, Martin",
+  abstract  = "The whole tool was rewritten as a class, and two options for
+               prepared augmentations were set up. Everything is shown in the
+               example Google Colab notebook on a small included annotated
+               (YOLO) image dataset.",
+  publisher = "Zenodo",
+  year      =  2022
+}
+```
