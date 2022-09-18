@@ -24,11 +24,23 @@ The development si done as collaboration of three scientific communities fro Uni
 **Wildlife monitoring** (Czech University of Life Science Prague)
 In the macroscopic world, wild animals, especially non-native species, are considered potential vectors of diseases. Camera traps became common practice in wildlife monitoring in the past decades producing hundreds of hours of videos. The videos are usually manually inspected for the presence of a focal group of species. No dedicated open-source software tool exists to help detect the animals from videos, count them or even classify them, there is potential for both filtering out of the videos without events and creating timelines of events as a result of the analysis.
 
+Example can be found [here](https://github.com/martinschatz-cz/SciCount/tree/main/WildlifeDetection/exampleResults)
+
+![whole data](WildlifeDetection/exampleResults/val_batch0_pred.jpg)
+
 **Object counting in Microscopic data** (Science Faculty, Charles University)
 In the microscopic world, we often analyze whole slides of blood smears. In non-mammalian taxa (namely in birds, reptiles, amphibians and fish) where erythrocytes are nucleated and specific molecular tools such as antibodies are missing, the data is obtained by manual analysis of the stained smears, which leads to compromised dataset sizes, significant intra and inter variability of results due to user input, and high personal time demands of the investigation. While suitable tools for object detection (of specific shapes) as stardist exists, there is not yet a dedicated tool for both user setup object detection and classification. Such a tool can be used for automatic counting and classification of various types of objects present in the blood, from erythrocytes (physiological applications) up to white blood cells (immunological applications) or parasites (parasitological applications).
 
+Example can be found [here](https://github.com/martinschatz-cz/SciCount/tree/main/SmearCounting/wholeData)
+
+![whole data](/SmearCounting/subset/val_batch0_pred.jpg)
+
 **Object counting of bacterial colonies** (University of Chemistry and Technology in Prague)
 Evaluation - such as counting, measuring, or categorization - of bacterial colonies on agar plates is one of the most common methods used in biomedical examinations, food and drug safety tests, as well as in public health. Counting is usually performed manually by technicians, which leads to error-prone and subjective results; it is also tedious, laborious, and time-intensive, therefore cost-ineffective. While there already exist some application-specific automated solutions, a workflow-driven approach with interchangeable components is needed. Modern machine learning object detection techniques approach a level of maturity on which deep learning models (DLM) are becoming suitable for evaluating scientific data. With proper training sets and data augmentation, DLMs should prove practical even without expensive imaging cameras.
+
+Example can be found [here](https://github.com/martinschatz-cz/SciCount/tree/main/LTEE/pilotRun)
+
+![whole data](/LTEE/pilotRun/val_batch0_pred.jpg)
 
 ### Example notebooks
 You can find example notebooks aplying [SciAugment](https://github.com/martinschatz-cz/SciAugment) with small test datasets in folder example_notebooks. There is reproducible example for **LTEE**, **Wildlife detection** and **Smear counting**.
