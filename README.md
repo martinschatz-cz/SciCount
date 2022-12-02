@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/481875886.svg)](https://zenodo.org/badge/latestdoi/481875886)
+[![DOI](https://zenodo.org/badge/481875886.svg)](https://zenodo.org/badge/latestdoi/481875886) [![CodeFactor](https://www.codefactor.io/repository/github/martinschatz-cz/scicount/badge/main)](https://www.codefactor.io/repository/github/martinschatz-cz/scicount/overview/main)
 
 # SciCount
 SciCount is tool focused on counting and classifying of objects in image-like data and scientific images, with training and example datasets. In it core it is YOLO V5 made by [Ultralytics](https://github.com/ultralytics/yolov5) (authored by [Glenn Jocher](https://www.linkedin.com/in/glenn-jocher/)), without which it would be impossible to apply our approaches on scientific data.
