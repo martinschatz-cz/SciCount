@@ -1,7 +1,5 @@
-
-train: ../train_data/images/train/  # train images (relative to 'path') 
-val: ../train_data/images/val/   # val images (relative to 'path') 
-
+train: ../train_data/images/train/  # train images (relative to 'path')
+val: ../train_data/images/val/   # val images (relative to 'path')
 
 # Classes
 nc: 2  # number of classes
