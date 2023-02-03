@@ -1,0 +1,6 @@
+train: ../train_data/images/train/  # train images (relative to 'path')
+val: ../train_data/images/val/   # val images (relative to 'path')
+
+# Classes
+nc: 6  # number of classes
+names: ['0','1','2','3','4','5']  # class names
