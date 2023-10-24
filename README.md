@@ -24,6 +24,8 @@ The development si done as collaboration of three scientific communities fro Uni
 **Wildlife monitoring** (Czech University of Life Science Prague)
 In the macroscopic world, wild animals, especially non-native species, are considered potential vectors of diseases. Camera traps became common practice in wildlife monitoring in the past decades producing hundreds of hours of videos. The videos are usually manually inspected for the presence of a focal group of species. No dedicated open-source software tool exists to help detect the animals from videos, count them or even classify them, there is potential for both filtering out of the videos without events and creating timelines of events as a result of the analysis.
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinschatz-cz/SciCount/blob/main/example_notebooks/WildlifeDetection/WildlifeDetection_YOLOv5_example.ipynb)
+
 Example can be found [here](https://github.com/martinschatz-cz/SciCount/tree/main/WildlifeDetection/exampleResults)
 
 ![whole data](WildlifeDetection/exampleResults/val_batch0_pred.jpg)
@@ -31,12 +33,16 @@ Example can be found [here](https://github.com/martinschatz-cz/SciCount/tree/mai
 **Object counting in Microscopic data** (Science Faculty, Charles University)
 In the microscopic world, we often analyze whole slides of blood smears. In non-mammalian taxa (namely in birds, reptiles, amphibians and fish) where erythrocytes are nucleated and specific molecular tools such as antibodies are missing, the data is obtained by manual analysis of the stained smears, which leads to compromised dataset sizes, significant intra and inter variability of results due to user input, and high personal time demands of the investigation. While suitable tools for object detection (of specific shapes) as stardist exists, there is not yet a dedicated tool for both user setup object detection and classification. Such a tool can be used for automatic counting and classification of various types of objects present in the blood, from erythrocytes (physiological applications) up to white blood cells (immunological applications) or parasites (parasitological applications).
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinschatz-cz/SciCount/blob/main/example_notebooks/SmearCounting/SmearCounting_YOLOv5_example.ipynb)
+
 Example can be found [here](https://github.com/martinschatz-cz/SciCount/tree/main/SmearCounting/wholeData)
 
 ![whole data](/SmearCounting/subset/val_batch0_pred.jpg)
 
 **Object counting of bacterial colonies** (University of Chemistry and Technology in Prague)
 Evaluation - such as counting, measuring, or categorization - of bacterial colonies on agar plates is one of the most common methods used in biomedical examinations, food and drug safety tests, as well as in public health. Counting is usually performed manually by technicians, which leads to error-prone and subjective results; it is also tedious, laborious, and time-intensive, therefore cost-ineffective. While there already exist some application-specific automated solutions, a workflow-driven approach with interchangeable components is needed. Modern machine learning object detection techniques approach a level of maturity on which deep learning models (DLM) are becoming suitable for evaluating scientific data. With proper training sets and data augmentation, DLMs should prove practical even without expensive imaging cameras.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinschatz-cz/SciCount/blob/main/example_notebooks/LTEE/LTEE_YOLOv5_example.ipynb)
 
 Example can be found [here](https://github.com/martinschatz-cz/SciCount/tree/main/LTEE/pilotRun)
 
@@ -77,7 +83,7 @@ We should also consider and implement:
 * LowPass filter to simulate OTF
 
 #### Microscopic Images
-Augmentation for microscopic images are much more challenging due to different way of how images are created and saved and since we are bound by limits of optics. Each of our channel is representing data of its own, can be shifted (due to physical color shift) and can have shifted brightness (if not corrected). So far nice explanation can be found in [Pete Bankhead](https://github.com/petebankhead) *Analyzing fluorescence microscopy images with ImageJ* online book: chapter [Simulating image formation](https://petebankhead.gitbooks.io/imagej-intro/content/chapters/macro_simulating/macro_simulating.html)
+Augmentation for microscopic images are much more challenging due to the different way of how images are created and saved and since we are bound by the limits of optics. Each of our channels represents data of its own, can be shifted (due to physical color shift) and can have shifted brightness (if not corrected). So far nice explanation can be found in [Pete Bankhead](https://github.com/petebankhead) *Analyzing fluorescence microscopy images with ImageJ* online book: chapter [Simulating image formation](https://petebankhead.gitbooks.io/imagej-intro/content/chapters/macro_simulating/macro_simulating.html)
 
 We should consider:
 * the size of the PSF (related to the objective lens NA and microscope type)
@@ -102,14 +108,14 @@ Chula-RBC-12 Dataset is a dataset of red blood cell (RBC) blood smear images use
 
 Data set is in JPEG (unspecified loss compresion), with unspecified form of labeling, it contains text and graphics objects in 70% of images, but about 30% of images are usable for object counting training. 
 
-## Interoperability, Re-usability and Sensitive Data
+## Interoperability, Reusability, Repeatability and Sensitive Data
 
-### Re-usability
+### Reusability and Repeatability
 
-We aim for high interoperbility, for this thi first step is to use Python, the second is precise case-study documentation and research data management. Scientic images can be tough to work with and use together with complex tools. There already exist Ethics quide for image analysis, and we will fully respect it and strive to go even further.
+We aim for high interoperability and repeatability, for this the first step is to use Python, the second is precise case-study documentation and research data management. Scientic images can be tough to work with and use together with complex tools. There already exists an Ethics quide for image analysis, and we will fully respect it and strive to go even further.
 
-First we need to know with what kind of data we are working and what to respect. In general, we can describe scientific images as data that have one or more proprties:
-* Brightness value have some specific, calibrated meaning
+First, we need to know with what kind of data we are working and what to respect. In general, we can describe scientific images as data that have one or more properties:
+* Brightness values have some specific, calibrated meaning
 * Multi channel data
 * More than 8-bit values
 * Signed values
